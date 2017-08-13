@@ -1,0 +1,33 @@
+div.container {
+  background-color: palegreen;
+}
+
+.left {
+  float: left;
+  background-color: gainsboro;
+  margin: 15px;
+  width: 500px;
+}
+
+.right {
+  float: right;
+  background-color: gainsboro;
+  margin: 15px;
+  width: 500px;
+
+}
+.container-component-1 {
+  background-color: lightcoral;
+  clear: both;
+
+}
+
+div {
+  margin: 5px;
+}
+h1 {
+  margin: 10px;
+}
+
+
+

@@ -1,0 +1,47 @@
+<div class="container">
+  <div>
+  <h1>Composant 1</h1>
+    <div class="left">
+      <h1>Selectionner des contacts</h1>
+      <hr>
+      <div>
+        <ul>
+          <li *ngFor="let contact of contacts; let i = index">
+            <div *ngIf="!contact.isSelected">
+            <input type="checkbox"
+                   name="checkbox"
+                   value="{{contact.id}}"
+                   [(ngModel)]="contact.isChecked"
+                   />
+
+              {{contact.prenom}} {{contact.nom}} {{contact.isChecked}}
+            </div>
+          </li>
+        </ul>
+      </div>
+      <button (click)="valider()">valider</button>
+    </div>
+
+    <div class="right">
+      <h1>Contacts selectionés</h1>
+      <hr>
+      <div>
+        <ul>
+          <li *ngFor="let contactSelectionee of contactSelectioner;let i = index">
+           <button (click)="deSelectioner(i)" class="red-btn">X</button> {{contactSelectionee.prenom}} {{contactSelectionee.nom}}
+          </li>
+        </ul>
+      </div>
+      <div>
+        <button (click)="ajouterContact()">Ajouter les contacts au carnet d'adresse</button>
+      </div>
+    </div>
+
+    <div class="container-component-1">
+      <app-composant2 [contactDuCarnetAdresse]="contactDuCarnetAdresse" [contactRetournee]="contacts"></app-composant2>
+    </div>
+  </div>
+
+  fuk off
+</div>
+

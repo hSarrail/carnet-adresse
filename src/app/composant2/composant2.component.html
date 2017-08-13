@@ -1,0 +1,13 @@
+<div>
+  <h1>Carnet d'adresses :</h1>
+  <div class="main">
+    <div *ngFor="let contact of contactDuCarnetAdresse; let i = index">
+      <h4> {{contact.prenom}} {{contact.nom}} </h4>
+
+      {{contact.adresse.rue}}
+      <br>
+      {{contact.adresse.codePostale}} {{contact.adresse.ville}} ({{contact.adresse.pays}})<br>
+      <button (click)="supprimerCarnetAdresse(i)">supprimer</button>
+    </div>
+  </div>
+</div>

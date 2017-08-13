@@ -1,0 +1,14 @@
+.container-component {
+  background-color: lightcoral;
+  margin-top: 250px;
+  margin-left: 10px;
+}
+.main {
+  margin :35px;
+}
+div {
+  margin: 5px;
+}
+h1 {
+  margin: 10px;
+}
